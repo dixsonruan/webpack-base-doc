@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>四个基本配置 | webpack基础配置</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/webpack-base-doc/assets/css/0.styles.351efd4b.css" as="style"><link rel="preload" href="/webpack-base-doc/assets/js/app.e1fd2722.js" as="script"><link rel="preload" href="/webpack-base-doc/assets/js/2.ba8b2b23.js" as="script"><link rel="preload" href="/webpack-base-doc/assets/js/7.866f60de.js" as="script"><link rel="prefetch" href="/webpack-base-doc/assets/js/3.47fdf015.js"><link rel="prefetch" href="/webpack-base-doc/assets/js/4.ae555653.js"><link rel="prefetch" href="/webpack-base-doc/assets/js/5.96bfa364.js"><link rel="prefetch" href="/webpack-base-doc/assets/js/6.5bddc191.js"><link rel="prefetch" href="/webpack-base-doc/assets/js/8.1c9e0161.js">
+    <link rel="stylesheet" href="/webpack-base-doc/assets/css/0.styles.351efd4b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/webpack-base-doc/" class="home-link router-link-active"><!----> <span class="site-name">webpack基础配置</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/webpack-base-doc/" class="nav-link">Home</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/webpack-base-doc/" class="nav-link">Home</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/webpack-base-doc/" class="sidebar-heading clickable router-link-active open"><span>webpack</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/webpack-base-doc/" class="sidebar-link">前端工程化</a></li><li><a href="/webpack-base-doc/base.html" class="active sidebar-link">四个基本配置</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="四个基本配置"><a href="#四个基本配置" class="header-anchor">#</a> 四个基本配置</h1> <p>entry, output, loader, plugin是webpack四个既基本又核心的配置</p> <p>在webpack.config.js中编写</p> <h2 id="entry"><a href="#entry" class="header-anchor">#</a> entry</h2> <p>entry是webpack的打包入口，是程序开始的起点，代码将从这里编译</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    entry<span class="token punctuation">:</span> string<span class="token operator">|</span>Array<span class="token operator">&lt;</span>string<span class="token operator">&gt;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在entry中填写入口文件名称，webpack会自动找到填写的文件，将文件中引用的依赖自动加载</p> <h2 id="output"><a href="#output" class="header-anchor">#</a> output</h2> <p>output是webpack的打包出口，最终的打包结果根据output的定义输出</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    output<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        filename<span class="token punctuation">:</span> string <span class="token comment">//指定的出口文件名称</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>当填写完这两个配置后，在当前文件夹下打开终端，输入命令webpack，便可开始一次打包</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/webpack-base-doc/" class="prev router-link-active">前端工程化</a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/webpack-base-doc/assets/js/app.e1fd2722.js" defer></script><script src="/webpack-base-doc/assets/js/2.ba8b2b23.js" defer></script><script src="/webpack-base-doc/assets/js/7.866f60de.js" defer></script>
+  </body>
+</html>
